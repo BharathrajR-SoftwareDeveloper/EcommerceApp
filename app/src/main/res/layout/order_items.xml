@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="8dp"
+    app:strokeWidth="1dp"
+    app:cardBackgroundColor="@color/black"
+    app:strokeColor="@color/cardview_dark_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvOrderItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item: Apples"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+            <TextView
+                android:id="@+id/tvOrderQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 kg"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="4dp"/>
+            <TextView
+                android:id="@+id/tvOrderPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹120"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_toEndOf="@id/tvOrderQuantity"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="4dp"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:layout_marginVertical="8dp"/>
+
+        <TextView
+            android:id="@+id/tvOrderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: John Doe"
+            android:textSize="15sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tvOrderPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone: 9876543210"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/tvOrderAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address: 123, Main Street, City"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="2dp"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
