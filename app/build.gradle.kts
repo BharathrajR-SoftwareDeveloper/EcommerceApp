@@ -48,6 +48,7 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.recyclerview)
     implementation(libs.androidx.recyclerview)
+    implementation(libs.androidx.scenecore)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -69,5 +70,9 @@ dependencies {
     implementation ("com.github.bumptech.glide:glide:4.16.0")
 
     implementation("it.xabaras.android:recyclerview-swipedecorator:1.4")
+
+    implementation("com.google.android.material:material:1.9.0")
+    implementation ("jp.wasabeef:blurry:4.0.1")
+
 
 }

@@ -5,8 +5,8 @@
     android:id="@+id/orderFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="100dp"
     tools:context=".ui.OrderFragment">
+
 
     <TextView
         android:id="@+id/titleTextView"
@@ -19,15 +19,18 @@
         android:textStyle="bold"
         android:textColor="@color/white" />
 
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvOrders"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="100dp"
         android:clipToPadding="false"
-        android:overScrollMode="never"
         android:padding="8dp"
+        android:paddingBottom="80dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
         android:background="@color/white"
         tools:listitem="@layout/order_items" />
+
 
 </FrameLayout>
